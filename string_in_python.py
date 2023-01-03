@@ -5,7 +5,7 @@ message2 = "Hello World with double quotes"
 print(message2)
 
 message3 = """multiline strings in python start
-and end with tripe quotes."""
+and end with triple quotes."""
 print(message3)
 
 length_of_string = len(message3)
@@ -21,3 +21,15 @@ print("First 5 characters of message2: " + message2[:5])
 
 # start from the 6th index and print till the end of message2
 print("Starting from 6th index till the end of message2: " + message2[6:])
+
+# print message2 to lowercase
+print(message2.lower())
+
+# print message2 to uppercase
+print(message2.upper())
+
+# But message2 remains intact because string is immutable.
+print(message2)
+
+# count the number of 'l' in message3
+print(message3.count('l'))
