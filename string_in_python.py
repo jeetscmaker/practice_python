@@ -33,3 +33,12 @@ print(message2)
 
 # count the number of 'l' in message3
 print(message3.count('l'))
+
+#find the index of 'World' in message
+print(message.find('World'))
+
+# if the word or character doesn't appear in the string then it returns -1.
+print(message2.find('Universe'))
+
+# Replacing a char or word in a string.
+print(message.replace('World', 'Universe')) # but the original message string remains intact.
