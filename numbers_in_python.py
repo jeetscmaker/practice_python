@@ -16,3 +16,12 @@ c = a + str(b)  # output will be 175
 d = b + int(a)  # output will be 22
 print("c is = " + str(c))
 print("d is = " + str(d))
+
+a = 5
+b = 2
+c = a/b  # output will be 2.5
+d = a//b # output will be 2, the // operator performs an integer division.
+print(c)
+print(type(c))  # <class 'float'>
+print(d)
+print(type(d))  # <class 'int'>
