@@ -4,8 +4,15 @@ c = a + b
 print("c is = " + str(c))
 
 # let's declare a = "17", b = 5 and c = a+b
-a = 17
-b = "5"
-c = b+a # TypeError: can only concatenate str (not "int") to str
-d = a+b # TypeError: unsupported operand type(s) for +: 'int' and 'str'
-print(c)
+# a = 17
+# b = "5"
+# c = b+a # TypeError: can only concatenate str (not "int") to str
+# d = a+b # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+# print(c)
+
+a = "17"
+b = 5
+c = a + str(b)  # output will be 175
+d = b + int(a)  # output will be 22
+print("c is = " + str(c))
+print("d is = " + str(d))
