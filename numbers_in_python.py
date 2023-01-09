@@ -34,3 +34,4 @@ print(round(3.7549, 3))  # this means round 3.7549 to 3 digit after decimal, out
 # A number raised to power of another number
 print(5**3) # it will print 125
 print(2**7) # it will print 128
+print(50 - 2**4) # it will print 50-16 = 34
