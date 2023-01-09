@@ -30,3 +30,7 @@ print(type(d))  # <class 'int'>
 print(round(3.75, 1))  # this means round 3.75 to 1 digit after decimal, output 3.8
 print(round(3.75, 0))  # this means round 3.75 to 0 digit after decimal, output 4.0
 print(round(3.7549, 3))  # this means round 3.7549 to 3 digit after decimal, output 3.755
+
+# A number raised to power of another number
+print(5**3) # it will print 125
+print(2**7) # it will print 128
