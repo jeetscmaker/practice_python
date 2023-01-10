@@ -40,3 +40,15 @@ print(letters)
 # clear the list by replacing all the elements with an empty list
 letters[:] = []
 print(letters)
+
+# The built-in function len() also applies to lists:
+letters = ['a', 'b', 'c', 'd']
+print(len(letters))
+
+# It is possible to nest lists (create lists containing other lists), for example:
+a = ['a', 'b', 'c']
+n = [1, 2, 3]
+x = [a, n]
+print(x)
+print(x[0])
+print(x[0][1])
