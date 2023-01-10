@@ -17,3 +17,14 @@ print(nums_copy)
 print(nums_copy[-2:])
 print(nums[:4])
 print(nums[1:3])
+
+# mutable list, that means internal value of a list can be changed.
+squares = [1,4,9,15,25] # the square of 4 should be 16 but it is 15
+squares[3] = 16
+print(squares)
+
+more_squares  = squares + [36,49]
+print(more_squares)
+
+more_squares.append(64)
+print(more_squares)
