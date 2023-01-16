@@ -1,11 +1,15 @@
 class Employee(object):
 	raise_amount = 1.04
+	numuber_of_employees = 0
 
 	def __init__(self, first_name, last_name, salary):
 		self.fname = first_name
 		self.lname = last_name
 		self.sal = salary
 		self.email = first_name + '.' + last_name + '@company.com'
+
+		# increment the number_of_employees when a new employee is initialized.
+		Employee.numuber_of_employees += 1
 
 	def full_name(self):      # This argument 'self' is very important
 		return '{} {}'.format(self.fname, self.lname)	
@@ -29,3 +33,4 @@ print(Employee.__dict__)
 emp_1.apply_raise()
 print(emp_1.sal)
 print(emp_1.__dict__)
+print("Total number of employees is: " + str(Employee.numuber_of_employees))
