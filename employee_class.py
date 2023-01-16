@@ -18,3 +18,5 @@ print(emp_1.email)
 print(emp_2.email)
 print(Employee.full_name(emp_1)) # another way of passing argument to self.
 print(Employee.full_name(emp_2))
+print(emp_1.__dict__)
+print(Employee.__dict__)
