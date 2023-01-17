@@ -31,3 +31,8 @@ print(Employee.raise_amount) # prints 1.06 because of set_raise_amount class met
 print(emp_1.raise_amount) # prints 1.06
 print(emp_2.raise_amount) # prints 1.06
 
+emp_str_1 = "Don-Monhy-1000"
+first_name, last_name, salary = emp_str_1.split('-')
+emp_3 = Employee(first_name, last_name, salary)
+print(emp_3.full_name())
+
