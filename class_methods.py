@@ -28,6 +28,13 @@ class Employee(object):
 		first_name, last_name, salary = emp_str.split('-')
 		return cls(first_name, last_name, salary)
 
+	@staticmethod
+	def is_workday(day):
+		if day.weekday() == 5 or day.weekday() == 6:
+			return False
+		else:
+			return True
+
 emp_1 = Employee("John", "Dalton", 1000)
 emp_2 = Employee("Ray", "Palmer", 1500)
 
@@ -48,5 +55,13 @@ emp_str_2 = "Jane-Alan-1500"
 emp_4 = Employee.from_string(emp_str_2)
 print(emp_4.full_name())
 
+import datetime as dt
+my_date = dt.date(2023, 1, 15) # it was a Sunday so returns False.
+workday = Employee.is_workday(my_date)
+print("my_date was a work day: " + str(workday))
+
+my_date = dt.date(2023, 1, 17) # it was a Tuesday so returns True.
+workday = Employee.is_workday(my_date)
+print("my_date was a work day: " + str(workday))
 
 
