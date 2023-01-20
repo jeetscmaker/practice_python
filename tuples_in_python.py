@@ -31,3 +31,28 @@ print(tuple_c[0])
 '''
 set_1 = {'History','History', 'Geography'}
 print(set_1)  # prints {'History', 'Geography'}
+
+set_math = {'Math', 'Physics', 'Chemistry', 'CompSci'}
+set_art = {'Math', 'Economics', 'Design'}
+
+# print the intersection of set_math and set_art
+print(set_art.intersection(set_math)) # prints {'Math'}
+
+# print the difference between the sets
+print(set_art.difference(set_math)) # prints {'Economics', 'Design'}
+
+# print the combination of sets
+print(set_art.union(set_math)) # {'Math', 'Economics', 'Physics', 'CompSci', 'Design', 'Chemistry'}
+
+# Creating list
+l = []
+l = list()
+
+# Creating tuple
+t = ()
+t = tuple()
+
+# Creating set
+s = {} # this is not right. It is a dictionary not a set.
+s = set() # correct
+
