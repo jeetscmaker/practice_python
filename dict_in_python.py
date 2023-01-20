@@ -24,3 +24,23 @@ print(student) # age-19 key value pair deleted
 
 pho = student.pop('phone') # phone key pair removed and value stored in pho.
 print(pho, student)
+
+# print the length of dict
+print(len(student))
+
+# print all the keys of dict
+print(student.keys())
+
+# print all the values of dict
+print(student.values())
+
+# print all the key-value pairs in dict
+print(student.items())
+
+# iterating through the keys of dict
+for every in student:
+	print(every) # prints only keys
+
+# iterating through key-value pair
+for key, value in student.items():
+	print(key, value)
