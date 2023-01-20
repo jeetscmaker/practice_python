@@ -8,3 +8,9 @@ student = {'name': "John", 'age': 19, 'courses': ['Math', 'CompSci']}
 print(student)
 print(student['name']) # prints John
 print(student['courses']) # ['Math', 'CompSci']
+
+# using [key] to access a dict will throw an error if the key is not in dict.
+# therefore we can use get() method of dict and also provide a default value in case
+# the key is not present in the dict.
+print(student.get('phone')) # prints None
+print(student.get('phone', 'phone number not found!')) 
