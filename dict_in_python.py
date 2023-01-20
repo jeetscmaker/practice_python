@@ -14,3 +14,13 @@ print(student['courses']) # ['Math', 'CompSci']
 # the key is not present in the dict.
 print(student.get('phone')) # prints None
 print(student.get('phone', 'phone number not found!')) 
+
+# adding key-value to dict
+student['phone'] = '999-999-9999'
+
+# removing key-value from a dict
+del student['age']
+print(student) # age-19 key value pair deleted
+
+pho = student.pop('phone') # phone key pair removed and value stored in pho.
+print(pho, student)
