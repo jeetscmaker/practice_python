@@ -53,10 +53,11 @@ print(x)
 print(x[0])
 print(x[0][1])
 
-# list can also waork as 'Stack' data structure
+''' list can also waork as 'Stack' data structure
 # there is no push() function in list as of today.
 # we can use append() to add an element at the end of the list.
 # but a pop() removes and returns last element from the list.
+'''
 letter_d = letters.pop() # returns 'd'
 print(letter_d, letters) # now letters = ['a', 'b', 'c']
 
@@ -64,7 +65,32 @@ print(letter_d, letters) # now letters = ['a', 'b', 'c']
 letters.reverse()
 print(letters)
 
-# We can also inplace sort a list using sort() function
+# We can also inplace sort a list in ascending order using sort() function
 letters.append('d') # letters = ['c', 'b', 'a', 'd']
 letters.sort()      # letters = ['a', 'b', 'c', 'd']
 print(letters)
+
+# sort a list in descending order
+primes = [11, 3, 7, 29, 19, 31, 5]
+primes.sort(reverse=True)
+print(primes)   # [31, 29, 19, 11, 7, 5, 3]
+
+''' If we don't want to alter the original list by sorting then we can 
+    get a copy of the sorted list by using sorted() function. '''
+sorted_primes = sorted(primes)
+print(sorted_primes)  # [3, 5, 7, 11, 19, 29, 31]
+
+# finding minimum of a list
+minimum = min(primes)
+maximum = max(primes)
+sum_of_list = sum(primes)
+print(minimum, maximum, sum_of_list)
+
+# we can find the first index of an item using index() method
+print(primes.index(5))
+print("Anthony".index('n'))
+
+# to find the occurrence of an item in a list
+print(4 in primes) # returns False
+print('p' in "Anthony") # returns False
+print('y' in "Anthony") # returns True
