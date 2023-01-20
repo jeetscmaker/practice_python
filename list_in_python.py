@@ -52,3 +52,19 @@ x = [a, n]
 print(x)
 print(x[0])
 print(x[0][1])
+
+# list can also waork as 'Stack' data structure
+# there is no push() function in list as of today.
+# we can use append() to add an element at the end of the list.
+# but a pop() removes and returns last element from the list.
+letter_d = letters.pop() # returns 'd'
+print(letter_d, letters) # now letters = ['a', 'b', 'c']
+
+# We can also inplace reverse a list using reverse()
+letters.reverse()
+print(letters)
+
+# We can also inplace sort a list using sort() function
+letters.append('d') # letters = ['c', 'b', 'a', 'd']
+letters.sort()      # letters = ['a', 'b', 'c', 'd']
+print(letters)
