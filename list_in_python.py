@@ -94,3 +94,17 @@ print("Anthony".index('n'))
 print(4 in primes) # returns False
 print('p' in "Anthony") # returns False
 print('y' in "Anthony") # returns True
+
+# enumerate over a list using enumerate() print index and its corresponding value.
+courses = ['Math', 'Physics', 'Chemistry', 'CompSci']
+for index, value in enumerate(courses):
+	print(index, value)
+
+# if we don't want the index to start from 0, then we can pass a start value of index
+for index, value in enumerate(courses, start = 1):
+	print(index, value)
+
+# if we want to join the values in our list using a delimeter
+delimeter = ', '
+print(delimeter.join(courses)) # Math, Physics, Chemistry, CompSci
+print('-'.join(courses))       # Math-Physics-Chemistry-CompSci
