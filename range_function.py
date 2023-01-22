@@ -19,3 +19,11 @@ def fac(n):
 
 
 print(fac(5))
+
+a = [1, 3, 5, 7]
+b = [2, 4, 6, 8]
+for av, bv in zip(a, b):
+    print(av, bv)
+
+for index, (av, bv) in enumerate(zip(a, b)):
+    print(f"{index}-> {av}, {bv}")
