@@ -1,3 +1,4 @@
+import time as t
 for x in range(10):
     print(x)  # it will print from 0 to 9.
 
@@ -27,3 +28,9 @@ for av, bv in zip(a, b):
 
 for index, (av, bv) in enumerate(zip(a, b)):
     print(f"{index}-> {av}, {bv}")
+
+# measuring the performance time of factorial algorithm
+start_time = t.perf_counter_ns()
+print(fac(10))
+end_time = t.perf_counter_ns()
+print(f"The time taken to run factorial algorithm: {(end_time-start_time)/1000000} milli-sec")
