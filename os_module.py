@@ -28,3 +28,14 @@ os.chdir("C:/Users/Jitendra/git/practice_python")
 print(os.listdir())
 last_modification_time = os.stat('first.py').st_mtime
 print(datetime.fromtimestamp(last_modification_time))
+
+''' os.walk() gives a tuple of (string, list, list). Here the first 'string' is the path of the current directory,
+    the second list is the list of directories in the current directory and the third 'list' is the list of all
+    the files in the current directory.
+'''
+
+for path, dirs, files in os.walk("C:/Users/Jitendra/.cache"):
+    print("Current Path: ", path)
+    print("Sub-directories: ", dirs)
+    print("Files: ", files)
+    print()
