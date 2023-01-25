@@ -39,3 +39,9 @@ for path, dirs, files in os.walk("C:/Users/Jitendra/.cache"):
     print("Sub-directories: ", dirs)
     print("Files: ", files)
     print()
+
+# os.environ prints all the environment variables present in the operating system.
+print(os.environ)
+print(os.environ.get("JAVA_HOME"))
+
+new_file_path = os.path.join(os.environ.get("CATALINA_HOME"), "log_file.txt")
