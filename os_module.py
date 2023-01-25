@@ -1,3 +1,4 @@
+from datetime import datetime
 import os
 
 # print all of the attributes and methods of os module.
@@ -14,7 +15,7 @@ print(os.getcwd())
 print(os.listdir())
 
 ''' os.mkdir('test_1') creates a directory in the current directory.
-    os. makedirs('test_1/test_2/test_3') goes deep dows and creates all the directories in the given argument.
+    os. makedirs('test_1/test_2/test_3') goes deep down and creates all the directories in the given argument.
     for example we never created test_2 directory but this function will create that for us.
     similarly, os.rmdir('test_1) will remove the test_1 directory.
     os.removedirs('/test1/test2/test3/') will delete all the directories recursively within test1.
@@ -23,3 +24,7 @@ print(os.listdir())
 os.mkdir('test_1')
 print(os.getcwd())
 os.rmdir('test_1')
+os.chdir("C:/Users/Jitendra/git/practice_python")
+print(os.listdir())
+last_modification_time = os.stat('first.py').st_mtime
+print(datetime.fromtimestamp(last_modification_time))
